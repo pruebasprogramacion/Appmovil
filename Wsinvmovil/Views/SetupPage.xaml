@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wsinvmovil.Views.SetupPage"
+             Title="Configuración"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="0,10"
+                             Spacing="15"
+                             VerticalOptions="FillAndExpand">
+
+            <!-- Parte superior con imagen -->
+            <Grid HeightRequest="250">
+                <Image Source="iconws.jpeg"
+                       WidthRequest="70"
+                       HeightRequest="70"
+                       Aspect="AspectFit"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+            </Grid>
+
+            <!-- Panel inferior -->
+            <Frame CornerRadius="30"
+                   Margin="0"
+                   Padding="20"
+                   BackgroundColor="{StaticResource PrimaryColor}"
+                   HasShadow="False">
+                <VerticalStackLayout Spacing="10">
+
+                    <Label Text="CONFIGURACIÓN DE INSTALACIÓN"
+                           TextColor="Black"
+                           FontSize="25"
+                           FontFamily="BROADW.TTF"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center" />
+
+                    <Label Text="Ingrese el nombre de la empresa:"
+                           FontSize="18"
+                           TextColor="Black" />
+
+                    <Entry x:Name="entryEmpresa"
+                           Placeholder="Nombre de la empresa"
+                           FontSize="16"
+                           Keyboard="Chat"
+                           TextColor="Black"
+                           TextChanged="entryEmpresa_TextChanged" />
+
+                    <Button Text="Guardar"
+                            x:Name="Guardar"
+                            Clicked="BtnGuardar_Clicked"
+                            FontSize="Title"
+                            CornerRadius="20"
+                            BackgroundColor="{StaticResource SecondaryColor}"
+                            TextColor="White"
+                            VerticalOptions="CenterAndExpand"/>
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
