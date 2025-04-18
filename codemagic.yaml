@@ -1,21 +1,23 @@
 workflows:
   ios-first-screen:
-    name: Compilar Wsinvmovil iOS pantalla inicial
-    max_build_duration: 60
-    environment:
+     name: Build MAUI for iOS Simulator
+     environment:
       vars:
         DOTNET_ROOT: /usr/local/share/dotnet
         PATH: $PATH:/usr/local/share/dotnet
-      xcode: latest
+        TARGET_FRAMEWORK: net9.0-ios
+      xcode: 16.3
+      cocoapods: default
+      node: 18.18.2
 
-    cache:
+     cache:
       cache_paths:
         - ~/.nuget/packages
         - ~/.dotnet
         - Wsinvmovil/bin
         - Wsinvmovil/obj
 
-    scripts:
+     scripts:
       - name: 🔍 Verificar rama y .csproj
         script: |
           echo "Rama activa:"
@@ -29,8 +31,19 @@ workflows:
           rm -rf Wsinvmovil/bin
           rm -rf Wsinvmovil/obj
 
-      - name: 📦 Restaurar paquetes NuGet
+      - name: Install .NET SDK 9.0.203 via script
         script: |
+          curl -sSL https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh
+          chmod +x dotnet-install.sh
+          ./dotnet-install.sh --version 9.0.203 --install-dir $HOME/dotnet
+          export DOTNET_ROOT=$HOME/dotnet
+          export PATH=$HOME/dotnet:$PATH
+          dotnet --info
+
+      - name: Restore NuGet packages
+        script: |
+          export DOTNET_ROOT=$HOME/dotnet
+          export PATH=$HOME/dotnet:$PATH
           dotnet restore Wsinvmovil/Wsinvmovil.csproj
 
       - name: 🛠 Compilar MAUI para iOS Simulator
@@ -41,7 +54,7 @@ workflows:
             -p:RuntimeIdentifier=iossimulator-arm64 \
             -p:EnableWindowsTargeting=false
 
-    artifacts:
-      - '**/*.app'
-      - '**/*.ipa'
-      - build.binlog
+        artifacts:
+        - '**/*.app'
+        - '**/*.ipa'
+        - build.binlog
