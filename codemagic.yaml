@@ -14,6 +14,14 @@ workflows:
           export PATH=$HOME/dotnet:$PATH
           dotnet --info
 
+      - name: Install MAUI workloads
+        script: |
+          export DOTNET_ROOT=$HOME/dotnet
+          export PATH=$HOME/dotnet:$PATH
+          dotnet workload install Wsinvmovil-ios --skip-sign-check
+          dotnet workload list
+    
+
       - name: Restore NuGet packages
         script: |
           export DOTNET_ROOT=$HOME/dotnet
