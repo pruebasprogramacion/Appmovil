@@ -1,0 +1,42 @@
+# Archivos de compilación
+bin/
+obj/
+
+# Archivos de usuario de Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Configuración de VS Code
+.vscode/
+
+# Archivos de configuración de VS
+.vs/
+
+# Archivos de log temporales
+*.log
+
+# Archivos generados por sistemas operativos
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Archivos de seguridad
+*.pfx
+*.key
+*.snk
+
+# Paquetes de NuGet descargados
+packages/
+
+# Archivos de publicación
+publish/
+
+# Configuraciones locales
+appsettings.Development.json
+
+# Archivos del sistema operativo
+.DS_Store
+*.swp
+wsinventarioapp6280e2388278.json
