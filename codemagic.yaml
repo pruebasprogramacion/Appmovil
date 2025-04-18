@@ -18,13 +18,13 @@ workflows:
         script: |
           export DOTNET_ROOT=$HOME/dotnet
           export PATH=$HOME/dotnet:$PATH
-          dotnet restore Wsinvmovil/ Wsinvmovil.csproj
+          dotnet restore Wsinvmovil/Wsinvmovil.csproj
 
       - name: Build iOS .NET MAUI App for Simulator
         script: |
           export DOTNET_ROOT=$HOME/dotnet
           export PATH=$HOME/dotnet:$PATH
-          dotnet build Wsinvmovil/ Wsinvmovil.csproj \
+          dotnet build Wsinvmovil/Wsinvmovil.csproj \
             -c Release \
             -f:net9.0-ios \
             -p:RuntimeIdentifier=iossimulator-arm64
