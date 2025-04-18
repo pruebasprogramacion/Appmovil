@@ -12,8 +12,8 @@ workflows:
       cache_paths:
         - ~/.nuget/packages
         - ~/.dotnet
-        - !Wsinvmovil/bin
-        - !Wsinvmovil/obj
+        - Wsinvmovil/bin
+        - Wsinvmovil/obj
 
     scripts:
       - name: 🔍 Verificar rama y .csproj
