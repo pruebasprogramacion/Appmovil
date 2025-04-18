@@ -18,7 +18,8 @@ workflows:
         script: |
           export DOTNET_ROOT=$HOME/dotnet
           export PATH=$HOME/dotnet:$PATH
-          dotnet workload install Wsinvmovil-ios --skip-sign-check
+          dotnet workload restore
+          dotnet restore Wsinvmovil/Wsinvmovil.csproj
           dotnet workload list
     
 
