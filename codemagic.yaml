@@ -1,0 +1,47 @@
+workflows:
+  ios-first-screen:
+    name: Compilar Wsinvmovil iOS pantalla inicial
+    max_build_duration: 60
+    environment:
+      vars:
+        DOTNET_ROOT: /usr/local/share/dotnet
+        PATH: $PATH:/usr/local/share/dotnet
+      xcode: latest
+
+    cache:
+      cache_paths:
+        - ~/.nuget/packages
+        - ~/.dotnet
+        - !Wsinvmovil/bin
+        - !Wsinvmovil/obj
+
+    scripts:
+      - name: 🔍 Verificar rama y .csproj
+        script: |
+          echo "Rama activa:"
+          git rev-parse --abbrev-ref HEAD
+          echo ""
+          echo "Framework objetivo:"
+          grep TargetFramework Wsinvmovil/Wsinvmovil.csproj
+
+      - name: 🧼 Limpiar bin y obj
+        script: |
+          rm -rf Wsinvmovil/bin
+          rm -rf Wsinvmovil/obj
+
+      - name: 📦 Restaurar paquetes NuGet
+        script: |
+          dotnet restore Wsinvmovil/Wsinvmovil.csproj
+
+      - name: 🛠 Compilar MAUI para iOS Simulator
+        script: |
+          dotnet build Wsinvmovil/Wsinvmovil.csproj \
+            -f net9.0-ios \
+            -c Release \
+            -p:RuntimeIdentifier=iossimulator-arm64 \
+            -p:EnableWindowsTargeting=false
+
+    artifacts:
+      - '**/*.app'
+      - '**/*.ipa'
+      - build.binlog
