@@ -37,7 +37,9 @@ workflows:
             -c Release \
             -f:net9.0-ios \
             -p:RuntimeIdentifier=iossimulator-arm64
-
+            -p:PlatformTarget=AnyCPU \
+           -p:EnableWindowsTargeting=false
+   
     artifacts:
       - '**/*.app'
 
