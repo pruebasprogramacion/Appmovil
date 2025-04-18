@@ -1,36 +1,10 @@
 workflows:
-  ios-first-screen:
-     name: Build MAUI for iOS Simulator
-     environment:
-      vars:
-        DOTNET_ROOT: /usr/local/share/dotnet
-        PATH: $PATH:/usr/local/share/dotnet
-        TARGET_FRAMEWORK: net9.0-ios
+  ios-maui-net9:
+    name: MAUI iOS Build - .NET 9 via dotnet-install.sh
+    environment:
       xcode: 16.3
       cocoapods: default
-      node: 18.18.2
-
-     cache:
-      cache_paths:
-        - ~/.nuget/packages
-        - ~/.dotnet
-        - Wsinvmovil/bin
-        - Wsinvmovil/obj
-
-     scripts:
-      - name: 🔍 Verificar rama y .csproj
-        script: |
-          echo "Rama activa:"
-          git rev-parse --abbrev-ref HEAD
-          echo ""
-          echo "Framework objetivo:"
-          grep TargetFramework Wsinvmovil/Wsinvmovil.csproj
-
-      - name: 🧼 Limpiar bin y obj
-        script: |
-          rm -rf Wsinvmovil/bin
-          rm -rf Wsinvmovil/obj
-
+    scripts:
       - name: Install .NET SDK 9.0.203 via script
         script: |
           curl -sSL https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh
@@ -44,17 +18,17 @@ workflows:
         script: |
           export DOTNET_ROOT=$HOME/dotnet
           export PATH=$HOME/dotnet:$PATH
-          dotnet restore Wsinvmovil/Wsinvmovil.csproj
+          dotnet restore Wsinvmovil/ Wsinvmovil.csproj
 
-      - name: 🛠 Compilar MAUI para iOS Simulator
+      - name: Build iOS .NET MAUI App for Simulator
         script: |
-          dotnet build Wsinvmovil/Wsinvmovil.csproj \
-            -f net9.0-ios \
+          export DOTNET_ROOT=$HOME/dotnet
+          export PATH=$HOME/dotnet:$PATH
+          dotnet build Wsinvmovil/ Wsinvmovil.csproj \
             -c Release \
-            -p:RuntimeIdentifier=iossimulator-arm64 \
-            -p:EnableWindowsTargeting=false
+            -f:net9.0-ios \
+            -p:RuntimeIdentifier=iossimulator-arm64
 
-        artifacts:
-        - '**/*.app'
-        - '**/*.ipa'
-        - build.binlog
+    artifacts:
+      - '**/*.app'
+
