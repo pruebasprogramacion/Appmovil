@@ -36,7 +36,8 @@ workflows:
           dotnet build Wsinvmovil/Wsinvmovil.csproj \
             -c Release \
             -f:net9.0-ios \
-            -p:RuntimeIdentifier=iossimulator-arm64 \
+            -p:RuntimeIdentifier=iossimulator-arm64
+            -p:PlatformTarget=AnyCPU \
             -p:MtouchLink=Full \
             -p:DebugType=None \
             -p:EnableSymbolStripping=true \
