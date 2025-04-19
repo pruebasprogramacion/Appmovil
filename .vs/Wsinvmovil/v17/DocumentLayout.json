@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\servicios\\googlesheetservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\servicios\\googlesheetservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\setuppage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\setuppage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\entidad\\e_credito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\entidad\\e_credito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\servicios\\googlesheetservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\servicios\\googlesheetservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,39 +30,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "SetupPage.xaml.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\SetupPage.xaml.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Views\\SetupPage.xaml.cs",
               "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\SetupPage.xaml.cs",
               "RelativeToolTip": "Wsinvmovil\\Views\\SetupPage.xaml.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAwwDEAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAswCoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-19T00:49:00.038Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "E_Credito.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Entidad\\E_Credito.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Entidad\\E_Credito.cs",
               "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Entidad\\E_Credito.cs",
               "RelativeToolTip": "Wsinvmovil\\Entidad\\E_Credito.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAA1wDwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-19T00:42:27.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "GoogleSheetServices.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Servicios\\GoogleSheetServices.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Servicios\\GoogleSheetServices.cs",
               "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Servicios\\GoogleSheetServices.cs",
               "RelativeToolTip": "Wsinvmovil\\Servicios\\GoogleSheetServices.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T00:40:13.996Z",
               "EditorCaption": ""
