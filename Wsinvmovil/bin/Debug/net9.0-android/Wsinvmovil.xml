@@ -10,10 +10,5 @@
             Exposes the Android Resource designer assembly into the project Namespace.
             </summary>
         </member>
-        <member name="M:GoogleSheetsService.MostrarAlertaCompat(System.String,System.String)">
-            <summary>
-            Muestra una alerta compatible con iOS y Android usando el nuevo enfoque sin Application.MainPage
-            </summary>
-        </member>
     </members>
 </doc>

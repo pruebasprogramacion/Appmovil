@@ -11,27 +11,8 @@
       "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\setuppage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\servicios\\selectioncolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\servicios\\selectioncolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\setuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\setuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\World System\\AppData\\Local\\Temp\\.vsdbgsrc\\0c9df03f44b478ebd286ee19602ace4942b802c8\\Views_SetupPage.xaml.sg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\entidad\\e_credito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\entidad\\e_credito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,24 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GoogleSheetServices.cs",
-              "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Servicios\\GoogleSheetServices.cs",
-              "RelativeDocumentMoniker": "Wsinvmovil\\Servicios\\GoogleSheetServices.cs",
-              "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Servicios\\GoogleSheetServices.cs",
-              "RelativeToolTip": "Wsinvmovil\\Servicios\\GoogleSheetServices.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAADwv38AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T00:40:13.996Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -68,86 +36,36 @@
               "RelativeDocumentMoniker": "Wsinvmovil\\Views\\SetupPage.xaml.cs",
               "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\SetupPage.xaml.cs",
               "RelativeToolTip": "Wsinvmovil\\Views\\SetupPage.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAADwvxgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAwwDEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T00:39:35.964Z",
+              "WhenOpened": "2025-04-19T00:49:00.038Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "Wsinvmovil\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\MainPage.xaml.cs",
-              "RelativeToolTip": "Wsinvmovil\\MainPage.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBkAAAAAAAAAAAAAAA==",
+              "Title": "E_Credito.cs",
+              "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Entidad\\E_Credito.cs",
+              "RelativeDocumentMoniker": "Wsinvmovil\\Entidad\\E_Credito.cs",
+              "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Entidad\\E_Credito.cs",
+              "RelativeToolTip": "Wsinvmovil\\Entidad\\E_Credito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T00:16:30.266Z",
+              "WhenOpened": "2025-04-19T00:42:27.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SelectionColorConverter.cs",
-              "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Servicios\\SelectionColorConverter.cs",
-              "RelativeDocumentMoniker": "Wsinvmovil\\Servicios\\SelectionColorConverter.cs",
-              "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Servicios\\SelectionColorConverter.cs",
-              "RelativeToolTip": "Wsinvmovil\\Servicios\\SelectionColorConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "GoogleSheetServices.cs",
+              "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Servicios\\GoogleSheetServices.cs",
+              "RelativeDocumentMoniker": "Wsinvmovil\\Servicios\\GoogleSheetServices.cs",
+              "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Servicios\\GoogleSheetServices.cs",
+              "RelativeToolTip": "Wsinvmovil\\Servicios\\GoogleSheetServices.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T23:54:42.141Z",
+              "WhenOpened": "2025-04-18T00:40:13.996Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\MainPage.xaml",
-              "RelativeDocumentMoniker": "Wsinvmovil\\MainPage.xaml",
-              "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\MainPage.xaml",
-              "RelativeToolTip": "Wsinvmovil\\MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-17T23:50:02.762Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Views_SetupPage.xaml.sg.cs",
-              "DocumentMoniker": "C:\\Users\\World System\\AppData\\Local\\Temp\\.vsdbgsrc\\0c9df03f44b478ebd286ee19602ace4942b802c8\\Views_SetupPage.xaml.sg.cs",
-              "RelativeDocumentMoniker": "..\\..\\Users\\World System\\AppData\\Local\\Temp\\.vsdbgsrc\\0c9df03f44b478ebd286ee19602ace4942b802c8\\Views_SetupPage.xaml.sg.cs",
-              "ToolTip": "C:\\Users\\World System\\AppData\\Local\\Temp\\.vsdbgsrc\\0c9df03f44b478ebd286ee19602ace4942b802c8\\Views_SetupPage.xaml.sg.cs [Solo lectura]",
-              "RelativeToolTip": "..\\..\\Users\\World System\\AppData\\Local\\Temp\\.vsdbgsrc\\0c9df03f44b478ebd286ee19602ace4942b802c8\\Views_SetupPage.xaml.sg.cs [Solo lectura]",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwB4AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T23:47:47.624Z",
-              "EditorCaption": " [Solo lectura]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\App.xaml",
-              "RelativeDocumentMoniker": "Wsinvmovil\\App.xaml",
-              "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\App.xaml",
-              "RelativeToolTip": "Wsinvmovil\\App.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-17T23:51:14.33Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SetupPage.xaml",
-              "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\SetupPage.xaml",
-              "RelativeDocumentMoniker": "Wsinvmovil\\Views\\SetupPage.xaml",
-              "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\SetupPage.xaml",
-              "RelativeToolTip": "Wsinvmovil\\Views\\SetupPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-17T23:46:16.051Z"
             }
           ]
         }

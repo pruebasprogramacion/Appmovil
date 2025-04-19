@@ -1,6 +1,7 @@
 using Microsoft.Maui.Storage;
 using Microsoft.Maui.Controls;
 using System;
+using Wsinvmovil.Entidad;
 
 namespace Wsinvmovil.Views
 {
@@ -16,15 +17,14 @@ namespace Wsinvmovil.Views
             if (!string.IsNullOrWhiteSpace(entryEmpresa.Text))
             {
                 string empresaMayusculas = entryEmpresa.Text.ToUpper();
-
                 var googleService = new GoogleSheetsService();
-                string? existe = await googleService.EmpresaExisteEnGoogleSheets(empresaMayusculas);
-
-                if (existe is not null)
+                ConexionInfo? conexion = await googleService.VerificarEmpresa(empresaMayusculas);
+                if ( conexion is not null)
                 {
                     Preferences.Set("EmpresaNombre", empresaMayusculas);
-                    Preferences.Set("AmbienteNombre", existe);
-
+                    Preferences.Set("AmbienteNombre", conexion.ambiente);
+                    Preferences.Set("IPServidor", conexion.ipServidor);
+                    Preferences.Set("NombreBDD", conexion.nombreBDD);
                     if (Application.Current?.Windows.Count > 0)
                     {
                         //Application.Current.Windows[0].Page = new NavigationPage(new LoginPage());
