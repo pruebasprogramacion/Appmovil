@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -61,5 +62,31 @@ namespace Wsinvmovil.Entidad
         public string nombreBDD { get; set; } = "";
         public string ambiente { get; set; } = "";
         public string error { get; set; } = ""; // para manejar errores también
+    }
+
+    public class UsuarioLogin
+    {
+        public string Usuario { get; set; } = "";
+        public string Clave { get; set; } = "";
+        public string IpServidor { get; set; } = "";
+        public string NombreBDD { get; set; } = "";
+    }
+
+    public class BuscadorNom
+    {
+        public string Nombre { get; set; } = "";
+        public string Id { get; set; } = "";
+        public string Cedual { get; set; } = "";
+    }
+
+    public class RealizarPagoViewModel
+    {
+        // Estas son las propiedades que estás usando en tu XAML
+        public bool MostrarNro { get; set; } = false;
+        public bool MostrarTarjeta { get; set; } = false;
+        public bool MostrarVoucher { get; set; } = false;
+        public bool MostrarBanco { get; set; } = false;
+
+        // Puedes agregar más propiedades si luego necesitas expandir tu lógica
     }
 }

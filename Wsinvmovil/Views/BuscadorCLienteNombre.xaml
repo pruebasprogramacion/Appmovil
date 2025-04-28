@@ -1,0 +1,81 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wsinvmovil.Views.BuscadorCLienteNombre"
+             xmlns:entidades="clr-namespace:Wsinvmovil.Entidad"
+             Title="BuscadorCLienteNombre">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="0,10" Spacing="15">
+
+            <!-- Imagen superior -->
+            <Image Source="primeraimagen.png"
+                   Aspect="AspectFill"
+                   HeightRequest="200"/>
+
+            <!-- Contenedor principal con Border -->
+            <Border Stroke="LightGray"
+                    StrokeThickness="1"
+                    StrokeShape="RoundRectangle 30"
+                    Padding="30"
+                    Margin="10,-20,10,0"
+                    BackgroundColor="{StaticResource PrimaryColor}">
+
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="BUSCADOR CLIENTES"  
+                           TextColor="Black" 
+                           FontSize="40" 
+                           HorizontalTextAlignment="Center" 
+                           FontFamily="BROADW.TTF" 
+                           FontAttributes="Bold"/>
+
+                    <Entry x:Name="BuscarEntry" 
+                           Placeholder="Buscar Cliente" 
+                           TextChanged="OnTextoCambiado"
+                           FontSize="14"
+                           TextColor="Black"/>
+
+                    <!-- Lista de clientes con Border -->
+                    <Border Stroke="Blue"
+                            StrokeThickness="1"
+                            StrokeShape="RoundRectangle 10"
+                            Padding="5"
+                            Margin="10"
+                            BackgroundColor="White"
+                            HeightRequest="250">
+
+                        <CollectionView x:Name="ListaClientes"
+                                        SelectionMode="Single"
+                                          ItemsSource="{Binding Clientes}"
+                                        SelectionChanged="OnClienteSeleccionado"
+                                        BackgroundColor="White">
+                            
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate x:DataType="entidades:BuscadorNom">
+                                    <Border Stroke="LightGray"
+                                            StrokeThickness="1"
+                                            StrokeShape="RoundRectangle 5"
+                                            Padding="8"
+                                            Margin="5"
+                                            BackgroundColor="#F5F5F5">
+                                        <Grid ColumnDefinitions="*,Auto">
+                                            <Label Grid.Column="0"
+                                                   Text="{Binding Nombre}"
+                                                   FontSize="12"
+                                                   TextColor="Black"
+                                                   VerticalOptions="Center"/>
+                                            <Label Grid.Column="1"
+                                                   Text="{Binding Id}"
+                                                   FontSize="10"
+                                                   TextColor="Gray"
+                                                   VerticalOptions="Center"/>
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </Border>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Wsinvmovil.Entidad"
+             x:Class="Wsinvmovil.Views.MenuPage"
+             Title="MenuPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="0,10" Spacing="15" VerticalOptions="Fill">
+
+            <!-- Imagen superior -->
+            <Image Source="primeraimagen.png"
+                   Aspect="AspectFill"
+                   HeightRequest="250"/>
+
+            <!-- Contenedor principal -->
+            <Border Stroke="LightGray"
+                    StrokeThickness="1"
+                    StrokeShape="RoundRectangle 30"
+                    Padding="30"
+                    Margin="10,-20,10,0"
+                    BackgroundColor="{StaticResource PrimaryColor}"
+                    VerticalOptions="Fill">
+
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="{x:Static local:GlobalSettings.nomempresa}"
+                        FontSize="14"
+                        FontAttributes="Bold"
+                        TextColor="Black"
+                        HorizontalTextAlignment="Center"/>
+                    <Label Text="MENU PRINCIPAL"
+                           TextColor="Black"
+                           FontSize="24"
+                           HorizontalTextAlignment="Center"
+                           FontFamily="BROADW.TTF"
+                           FontAttributes="Bold"/>
+
+                    <Label Text="Seleccione Opción:"
+                           TextColor="Black"
+                           FontSize="18"
+                           HorizontalTextAlignment="Center"
+                           FontFamily="BROADW.TTF"
+                           FontAttributes="Bold"/>
+
+                    <!-- Botones -->
+                    <Button Margin="0,20,0,0"
+                            Text="Consulta de Clientes"
+                            x:Name="ClientesPage"
+                            Clicked="ClientesPage_Clicked"
+                            FontSize="Title"
+                            CornerRadius="10"
+                            BackgroundColor="Green"
+                            LineBreakMode="WordWrap"/>
+
+                    <Button Margin="0,20,0,0"
+                            Text="Consulta Pagos"
+                            x:Name="PagosPage"
+                            Clicked="PagosPage_Clicked"
+                            FontSize="Title"
+                            CornerRadius="10"
+                            BackgroundColor="DeepSkyBlue"
+                            LineBreakMode="WordWrap"/>
+
+                    <Button Margin="0,20,0,0"
+                            Text="Inventario"
+                            x:Name="InventarioPage"
+                            Clicked="InventarioPage_Clicked"
+                            FontSize="Title"
+                            CornerRadius="10"
+                            BackgroundColor="Gray"
+                            LineBreakMode="WordWrap"/>
+
+                    <Button Margin="0,20,0,0"
+                            Text="Salir"
+                            x:Name="Salir"
+                            Clicked="Salir_Clicked"
+                            FontSize="Title"
+                            CornerRadius="10"
+                            BackgroundColor="#2613F4"
+                            LineBreakMode="WordWrap"/>
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

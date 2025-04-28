@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wsinvmovil.Views.ComprobantePage"
+             Title="ComprobantePage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="0,10" Spacing="15">
+
+            <!-- Imagen superior -->
+            <Image Source="primeraimagen.png"
+                   Aspect="AspectFill"
+                   HeightRequest="200" />
+
+            <!-- Contenedor principal con Border -->
+            <Border Stroke="LightGray"
+                    StrokeShape="RoundRectangle 30"
+                    StrokeThickness="1"
+                    Padding="30"
+                    Margin="10, -20, 10, 0"
+                    BackgroundColor="{StaticResource PrimaryColor}">
+
+                <VerticalStackLayout Spacing="10">
+
+                    <Label Text="IMPRESION COMPROBANTE"
+                           TextColor="Black"
+                           FontSize="18"
+                           HorizontalTextAlignment="Center"
+                           FontFamily="BROADW.TTF"
+                           FontAttributes="Bold" />
+
+                    <!-- WebView para mostrar el comprobante -->
+                    <WebView x:Name="ComprobanteWebView"
+                             HeightRequest="400" />
+
+                    <!-- Botones -->
+                    <Button Text="Cerrar"
+                            BackgroundColor="Red"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            Margin="10"
+                            Padding="10"
+                            Clicked="Cerrar_Clicked"
+                            HorizontalOptions="Center"
+                            VerticalOptions="End" />
+
+                    <Button Text="Guardar Comprobante"
+                            BackgroundColor="Blue"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            Margin="10"
+                            Padding="10"
+                            Clicked="Guardar_Clicked"
+                            HorizontalOptions="Center"
+                            VerticalOptions="End" />
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

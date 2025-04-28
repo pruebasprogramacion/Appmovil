@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:entidades="clr-namespace:Wsinvmovil.Entidad"
+             x:Class="Wsinvmovil.Views.RealizarPagoPage"
+             Title="RealizarPagoPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="0,10" Spacing="15">
+
+            <!-- Imagen superior -->
+            <Image Source="primeraimagen.png"
+                   Aspect="AspectFill"
+                   HeightRequest="200" />
+
+            <!-- Contenedor principal con Border -->
+            <Border Stroke="LightGray"
+                    StrokeShape="RoundRectangle 30"
+                    StrokeThickness="1"
+                    Padding="30"
+                    Margin="10, -20, 10, 0"
+                    BackgroundColor="{StaticResource PrimaryColor}">
+
+                <VerticalStackLayout Spacing="5">
+
+                    <Label Text="GESTION PAGOS"
+                           TextColor="Black"
+                           FontSize="18"
+                           HorizontalTextAlignment="Center"
+                           FontFamily="BROADW.TTF"
+                           FontAttributes="Bold" />
+
+                    <!-- Grids -->
+                    <Grid Margin="0,10,0,0" ColumnDefinitions="0.2*,0.8*">
+                        <Label Grid.Column="0" Text="Cliente:" TextColor="Black" FontSize="14" FontAttributes="Bold" />
+                        <Label Grid.Column="1" x:Name="TxtNombrePago" TextColor="Black" FontSize="14" />
+                    </Grid>
+
+                    <Grid Margin="0,10,0,0" ColumnDefinitions="0.2*,0.8*">
+                        <Label Grid.Column="0" Text="ID:" TextColor="Black" FontSize="14" FontAttributes="Bold" />
+                        <Label Grid.Column="1" x:Name="TxtIdPago" TextColor="Black" FontSize="14" />
+                    </Grid>
+
+                    <Grid Margin="0,10,0,0" ColumnDefinitions="0.2*,0.3*,0.2*,0.3*">
+                        <Label Grid.Column="0" Text="Saldo:" TextColor="Black" FontSize="14" FontAttributes="Bold" />
+                        <Label Grid.Column="1" x:Name="TxtSaldoPago" TextColor="Black" FontSize="16" />
+                        <Label Grid.Column="2" Text="Fec.Pago:" TextColor="Black" FontSize="14" FontAttributes="Bold" />
+                        <DatePicker Grid.Column="3" x:Name="TxtFechaPago" TextColor="Black" FontSize="14" />
+                    </Grid>
+
+                    <Grid Margin="0,10,0,0" ColumnDefinitions="*,*,*,*">
+                        <Label Grid.Column="0" Text="Monto Pago:" TextColor="Black" FontSize="10" FontAttributes="Bold" />
+                        <Entry Grid.Column="1" x:Name="TxtMontoPago" Keyboard="Numeric" TextColor="Black" FontSize="14" />
+                        <Label Grid.Column="2" Text="Recibo Nro:" TextColor="Black" FontSize="10" FontAttributes="Bold" />
+                        <Label Grid.Column="3" x:Name="TxtRecibo" TextColor="Blue" FontSize="14" FontAttributes="Bold" />
+                    </Grid>
+
+                    <Grid Margin="0,10,0,0" ColumnDefinitions="0.2*,0.8*">
+                        <Label Grid.Column="0" Text="Forma Pago:" TextColor="Black" FontSize="14" FontAttributes="Bold" />
+                        <Picker Grid.Column="1" x:Name="PckFormaPago"
+                                Title="Seleccione una forma de pago"
+                                TextColor="Black"
+                                FontSize="14"
+                                SelectedIndexChanged="PckFormaPago_SelectedIndexChanged">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>EFECTIVO</x:String>
+                                    <x:String>TRANSFERENCIA</x:String>
+                                    <x:String>CHEQUE</x:String>
+                                    <x:String>TARJETA</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </Grid>
+
+                    <Grid Margin="0,10,0,0" ColumnDefinitions="0.2*,0.8*" IsVisible="{Binding MostrarBanco}" x:DataType="entidades:RealizarPagoViewModel">
+                        <Label Grid.Column="0" Text="Banco:" TextColor="Black" FontSize="14" FontAttributes="Bold" />
+                        <Picker Grid.Column="1" x:Name="PckBanco" Title="Seleccione un banco" TextColor="Black" FontSize="14"
+                                SelectedIndexChanged="PckBanco_SelectedIndexChanged" />
+                    </Grid>
+
+                    <Grid Margin="0,10,0,0" ColumnDefinitions="0.2*,0.8*" IsVisible="{Binding MostrarNro}" x:DataType="entidades:RealizarPagoViewModel">
+                        <Label Grid.Column="0" Text="Nro:" x:Name="TxtNro" TextColor="Black" FontSize="14" FontAttributes="Bold" />
+                        <Entry Grid.Column="1" x:Name="TxtNroP" TextColor="Black" FontSize="14" />
+                    </Grid>
+
+                    <Grid Margin="0,10,0,0" ColumnDefinitions="0.2*,0.8*" IsVisible="{Binding MostrarTarjeta}" x:DataType="entidades:RealizarPagoViewModel">
+                        <Label Grid.Column="0" Text="Tarjeta:" TextColor="Black" FontSize="14" FontAttributes="Bold" />
+                        <Entry Grid.Column="1" x:Name="TxtTarjeta" TextColor="Black" FontSize="14" />
+                    </Grid>
+
+                    <Grid Margin="0,10,0,0" ColumnDefinitions="0.2*,0.8*" IsVisible="{Binding MostrarVoucher}" x:DataType="entidades:RealizarPagoViewModel">
+                        <Label Grid.Column="0" Text="Voucher:" TextColor="Black" FontSize="14" FontAttributes="Bold" />
+                        <Entry Grid.Column="1" x:Name="TxtVoucher" TextColor="Black" FontSize="14" />
+                    </Grid>
+
+                    <!-- Botones -->
+                    <Grid Margin="0,10,0,0" ColumnDefinitions="0.3*,0.3*,0.3*">
+                        <ImageButton Grid.Column="0" Source="grabar.png" WidthRequest="60" HeightRequest="50"
+                                     x:Name="btnGrabar" CornerRadius="10" Padding="0"
+                                     BackgroundColor="{StaticResource SecondaryColor}" Clicked="GrabarButton_Clicked" />
+                        <Label Grid.Column="0" Text="Grabar" VerticalOptions="End" HorizontalOptions="Center"
+                               FontSize="10" TextColor="Black" />
+
+                        <ImageButton Grid.Column="1" Source="imprimir.png" WidthRequest="60" HeightRequest="50"
+                                     x:Name="btnImprimir" CornerRadius="10" Padding="0"
+                                     BackgroundColor="{StaticResource SecondaryColor}" Clicked="ImprimirButton_Clicked"
+                                     IsEnabled="False" />
+                        <Label Grid.Column="1" Text="Imp" VerticalOptions="End" HorizontalOptions="Center"
+                               FontSize="10" TextColor="Black" />
+
+                        <ImageButton Grid.Column="2" Source="back.png" WidthRequest="60" HeightRequest="50"
+                                     x:Name="btnBack" CornerRadius="10" Padding="0"
+                                     BackgroundColor="{StaticResource SecondaryColor}" Clicked="btnBack_Clicked" />
+                        <Label Grid.Column="2" Text="Back" VerticalOptions="End" HorizontalOptions="Center"
+                               FontSize="10" TextColor="Black" />
+                    </Grid>
+
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -40,6 +40,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Wsinvmovil.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
+[C:/Aplicaciones_Desarrollo/Wsinvmovil/Wsinvmovil/Plantillas/Plantilla.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Wsinvmovil.Plantillas.Plantilla.xaml
+build_metadata.AdditionalFiles.TargetPath = Plantillas\Plantilla.xaml
+build_metadata.AdditionalFiles.RelativePath = Plantillas\Plantilla.xaml
+
 [C:/Aplicaciones_Desarrollo/Wsinvmovil/Wsinvmovil/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Wsinvmovil.Resources.Styles.Colors.xaml
@@ -52,11 +58,59 @@ build_metadata.AdditionalFiles.ManifestResourceName = Wsinvmovil.Resources.Style
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Aplicaciones_Desarrollo/Wsinvmovil/Wsinvmovil/Views/BuscadorCLienteNombre.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Wsinvmovil.Views.BuscadorCLienteNombre.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\BuscadorCLienteNombre.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\BuscadorCLienteNombre.xaml
+
+[C:/Aplicaciones_Desarrollo/Wsinvmovil/Wsinvmovil/Views/ClientesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Wsinvmovil.Views.ClientesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ClientesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ClientesPage.xaml
+
+[C:/Aplicaciones_Desarrollo/Wsinvmovil/Wsinvmovil/Views/ComprobantePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Wsinvmovil.Views.ComprobantePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ComprobantePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ComprobantePage.xaml
+
+[C:/Aplicaciones_Desarrollo/Wsinvmovil/Wsinvmovil/Views/ConsultaPagosPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Wsinvmovil.Views.ConsultaPagosPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ConsultaPagosPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ConsultaPagosPage.xaml
+
+[C:/Aplicaciones_Desarrollo/Wsinvmovil/Wsinvmovil/Views/InventarioPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Wsinvmovil.Views.InventarioPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\InventarioPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\InventarioPage.xaml
+
 [C:/Aplicaciones_Desarrollo/Wsinvmovil/Wsinvmovil/Views/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Wsinvmovil.Views.LoginPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[C:/Aplicaciones_Desarrollo/Wsinvmovil/Wsinvmovil/Views/MenuPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Wsinvmovil.Views.MenuPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MenuPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MenuPage.xaml
+
+[C:/Aplicaciones_Desarrollo/Wsinvmovil/Wsinvmovil/Views/PagosPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Wsinvmovil.Views.PagosPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PagosPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PagosPopup.xaml
+
+[C:/Aplicaciones_Desarrollo/Wsinvmovil/Wsinvmovil/Views/RealizarPagoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Wsinvmovil.Views.RealizarPagoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RealizarPagoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RealizarPagoPage.xaml
 
 [C:/Aplicaciones_Desarrollo/Wsinvmovil/Wsinvmovil/Views/SetupPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

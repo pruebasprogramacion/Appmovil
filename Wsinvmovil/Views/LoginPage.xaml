@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wsinvmovil.Views.LoginPage"
+             Title="LoginPage"  
+             BackgroundColor="White">
+
+
+    <ScrollView>
+        <VerticalStackLayout Padding="0,10" Spacing="15" VerticalOptions="FillAndExpand">
+
+            <!-- Imagen superior -->
+            <Image Source="primeraimagen.png"
+                       Aspect="AspectFill"
+                       HeightRequest="250"/>
+
+            <!-- Contenedor de Login -->
+            <Frame CornerRadius="30"
+                       Padding="30"
+                       Margin="10, -20, 10, 0"
+                       BackgroundColor="{StaticResource PrimaryColor}"
+                       VerticalOptions="FillAndExpand"
+                       HasShadow="True">
+
+                <VerticalStackLayout Spacing="10"  VerticalOptions="FillAndExpand" >
+
+                    <Label Text="LOGIN"
+                               TextColor="Black"
+                               FontSize="40"
+                               HorizontalTextAlignment="Center"
+                               FontFamily="BROADW.TTF"
+                               FontAttributes="Bold"/>
+
+                    <Label x:Name="lblempresa"
+                               TextColor="Black"
+                               FontSize="14"
+                               HorizontalTextAlignment="Center"
+                               FontFamily="BROADW.TTF"
+                               FontAttributes="Bold"/>
+
+                    <Label x:Name="lblambiente"
+                               TextColor="Black"
+                               FontSize="8"
+                               HorizontalTextAlignment="Center"
+                               FontFamily="BROADW.TTF"/>
+
+                    <!-- Usuario -->
+                    <Grid ColumnDefinitions=".2*,.8*"
+                              HeightRequest="60">
+
+                        <RoundRectangle
+                                BackgroundColor="{StaticResource ThirdColor}"
+                                CornerRadius="10"
+                                WidthRequest="60" />
+
+                        <Image HorizontalOptions="Center"
+                                   VerticalOptions="Center">
+                            <Image.Source>
+                                <FontImageSource
+                                        FontFamily="AwesomeSolid"
+                                        Glyph="&#xf007;"
+                                        Size="30"
+                                        Color="#2196F3" />
+                            </Image.Source>
+                        </Image>
+
+                        <Entry Grid.Column="1"
+                                   Placeholder="Usuario:"
+                                   x:Name="TxtUsuario"
+                                   TextChanged="UsuarioEntry_TextChanged"
+                                   Keyboard="Chat"
+                                   TextColor="Black"/>
+                    </Grid>
+
+                    <!-- Password -->
+                    <Grid ColumnDefinitions=".2*,.7*,.1*"
+                              HeightRequest="60">
+
+                        <RoundRectangle
+                                BackgroundColor="{StaticResource ThirdColor}"
+                                CornerRadius="10"
+                                WidthRequest="60" />
+
+                        <Image HorizontalOptions="Center"
+                                   VerticalOptions="Center">
+                            <Image.Source>
+                                <FontImageSource
+                                        FontFamily="AwesomeSolid"
+                                        Glyph="&#xf084;"
+                                        Size="30"
+                                        Color="#2196F3" />
+                            </Image.Source>
+                        </Image>
+
+                        <Entry Grid.Column="1"
+                                   Placeholder="Password:"
+                                   x:Name="TxtPassword"
+                                   IsPassword="True"
+                                   TextChanged="UsuarioEntry_TextChanged"
+                                   Keyboard="Chat"
+                                   TextColor="Black"/>
+
+                        <ImageButton Grid.Column="2"
+                                         Source="eye_closed.png"
+                                         x:Name="TogglePasswordButton"
+                                         Clicked="TogglePasswordVisibility"
+                                         BackgroundColor="Transparent"
+                                         HeightRequest="40"
+                                         WidthRequest="40"
+                                         HorizontalOptions="End"
+                                         VerticalOptions="Center"
+                                         Aspect="AspectFit" />
+                    </Grid>
+
+                    <!-- Botón de ingreso -->
+                    <Button Text="Ingresar"
+                                x:Name="Ingresar"
+                                FontSize="Title"
+                                CornerRadius="20"
+                                Margin="0,20,0,0"
+                                Clicked="Ingresar_Clicked"
+                                BackgroundColor="{StaticResource SecondaryColor}"/>
+
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,61 @@
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wsinvmovil.Views.PagosPopup"
+             IsVisible="False"
+             BackgroundColor="Transparent">
+
+    <Grid RowDefinitions="*,Auto,*"
+          ColumnDefinitions="*,Auto,*">
+
+        <!-- Fondo semitransparente -->
+        <BoxView Grid.RowSpan="3"
+                 Grid.ColumnSpan="3"
+                 BackgroundColor="Transparent"
+                 Opacity="0.5"/>
+
+        <!-- Popup centrado -->
+        <Border Grid.Row="1" Grid.Column="1"
+                BackgroundColor="White"
+                Stroke="LightGray"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 10"
+                Padding="15"
+                Margin="0,0,0,20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="300">
+
+            <!-- Contenido con scroll -->
+            <ScrollView>
+                <VerticalStackLayout Spacing="15">
+
+                    <Grid HorizontalOptions="Center">
+                        <Label Text="Detalles de Pago"
+                             FontSize="18"
+                             FontAttributes="Bold"
+                             LineBreakMode="WordWrap"
+                             HorizontalTextAlignment="Center"
+                             TextColor="Black"
+                             WidthRequest="250" />
+                    </Grid> 
+
+                    <Label x:Name="lblDetails"
+                       FontSize="14"
+                       LineBreakMode="WordWrap"
+                       HorizontalOptions="Fill"
+                       HorizontalTextAlignment="Start"
+                       TextColor="Black"/>
+
+                    <Button x:Name="btnClosePop"
+                            Text="OK"
+                            BackgroundColor="Blue"
+                            TextColor="White"
+                            CornerRadius="10"
+                            HeightRequest="40"
+                            Clicked="OnCloseClicked"/>
+
+                </VerticalStackLayout>
+            </ScrollView>
+        </Border>
+    </Grid>
+</ContentView>

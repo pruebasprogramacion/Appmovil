@@ -15,7 +15,7 @@ namespace Wsinvmovil
 
             if (Preferences.ContainsKey("EmpresaNombre"))
             {
-                paginaInicial = new SetupPage();
+                paginaInicial = new LoginPage();
             }
             else
             {

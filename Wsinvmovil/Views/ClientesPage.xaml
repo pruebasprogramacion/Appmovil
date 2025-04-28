@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:entidades="clr-namespace:Wsinvmovil.Entidad"
+             x:Class="Wsinvmovil.Views.ClientesPage"
+             Title="ClientesPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="0,10" Spacing="10">
+
+            <!-- Imagen superior -->
+            <Image Source="primeraimagen.png"
+                   Aspect="AspectFill"
+                   HeightRequest="200"/>
+
+            <!-- Contenedor principal con Border -->
+            <Border
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 30"
+                Stroke="Gray"
+                BackgroundColor="{StaticResource PrimaryColor}"
+                Padding="30"
+                Margin="10, -20, 10, 0">
+
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="{x:Static entidades:GlobalSettings.nomempresa}"
+                        FontSize="14"
+                        FontAttributes="Bold"
+                        TextColor="Black"
+                        HorizontalTextAlignment="Center"/>
+                    <Label Text="CLIENTES"
+                           TextColor="Black"
+                           FontSize="24"
+                           HorizontalTextAlignment="Center"
+                           FontFamily="BROADW.TTF"
+                           FontAttributes="Bold" />
+
+                    <!-- Buscador -->
+                    <Grid Margin="0,10,0,0" ColumnDefinitions=".6*,.20*,.20*">
+                        <Entry Grid.Column="0"
+                               Placeholder="Datos Cliente"
+                               x:Name="TxtCedula"
+                               TextChanged="ConvertirMayuscula_TextChanged"
+                               TextColor="Black"/>
+                        <ImageButton Grid.Column="1"
+                                     Source="buscador.png"
+                                     WidthRequest="40"
+                                     HeightRequest="40"
+                                     BackgroundColor="{StaticResource ThirdColor}"
+                                     Clicked="Buscar_Clicked"/>
+                        <Label Grid.Column="1" Text="CI"
+                               VerticalOptions="End"
+                               HorizontalOptions="Center"
+                               FontSize="14"
+                               TextColor="Black"/>
+                        <ImageButton Grid.Column="2"
+                                     Source="buscanom.png"
+                                     WidthRequest="40"
+                                     HeightRequest="40"
+                                     BackgroundColor="{StaticResource ThirdColor}"
+                                     Clicked="BuscarPornom_Clicked"/>
+                        <Label Grid.Column="2" Text="Nom"
+                               VerticalOptions="End"
+                               HorizontalOptions="Center"
+                               FontSize="14"
+                               TextColor="Black"/>
+                    </Grid>
+
+                    <!-- Datos Cliente -->
+                    <Grid Margin="0,10,0,0" ColumnDefinitions=".3*,.7*">
+                        <Label Grid.Column="0" Text="Nombres:"
+                               TextColor="Black"
+                               FontSize="12"
+                               FontAttributes="Bold" />
+                        <Label Grid.Column="1" x:Name="TxtNombre"
+                               TextColor="Black"
+                               FontSize="14" />
+                    </Grid>
+
+                    <Grid Margin="0,10,0,0" ColumnDefinitions=".2*,.8*">
+                        <Label Grid.Column="0" Text="ID:"
+                               TextColor="Black"
+                               FontSize="14"
+                               FontAttributes="Bold" />
+                        <Label Grid.Column="1" x:Name="TxtId"
+                               TextColor="Black"
+                               FontSize="14" />
+                    </Grid>
+
+                    <!-- Crédito -->
+                    <Grid Margin="0,10,0,0" ColumnDefinitions="*,*,*,*">
+                        <Label Grid.Column="0" Text="Credito :" TextColor="Black" FontSize="14" FontAttributes="Bold"/>
+                        <Label Grid.Column="1" x:Name="TxtCredito" TextColor="Black" FontSize="14"/>
+                        <Label Grid.Column="2" Text="Saldo :" TextColor="Black" FontSize="14" FontAttributes="Bold"/>
+                        <Label Grid.Column="3" x:Name="TxtSaldo" TextColor="Black" FontSize="14"/>
+                    </Grid>
+
+                    <Grid Margin="0,10,0,0" ColumnDefinitions=".5*,.5*">
+                        <Label Text="Dias de Atraso :" TextColor="Black" FontSize="14" FontAttributes="Bold"/>
+                        <Label Grid.Column="1" x:Name="TxtDias" TextColor="Black" FontSize="14"/>
+                    </Grid>
+
+                    <!-- Lista de Créditos -->
+                    <Border Stroke="LightGray" StrokeShape="RoundRectangle 10" StrokeThickness="1" 
+                            BackgroundColor="White" Padding="5">
+                        <CollectionView x:Name="ListaCreditos"
+                                        SelectionMode="Single"
+                                        HeightRequest="180">
+                            <CollectionView.Header>
+                                <Grid ColumnDefinitions=".1*,.25*,.25*,.12*,.15*,.13*" BackgroundColor="#2196F3" Padding="5">
+                                    <Label Text="Cred." FontAttributes="Bold" FontSize="10" Grid.Column="0" TextColor="White"/>
+                                    <Label Text="Fecha" FontAttributes="Bold" FontSize="10" Grid.Column="1" TextColor="White"/>
+                                    <Label Text="Factura" FontAttributes="Bold" FontSize="10" Grid.Column="2" TextColor="White"/>
+                                    <Label Text="Plazo" FontAttributes="Bold" FontSize="10" Grid.Column="3" TextColor="White"/>
+                                    <Label Text="Valor" FontAttributes="Bold" FontSize="10" Grid.Column="4" TextColor="White"/>
+                                    <Label Text="Saldo" FontAttributes="Bold" FontSize="10" Grid.Column="5" TextColor="White"/>
+                                </Grid>
+                            </CollectionView.Header>
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate x:DataType="entidades:E_Credito">
+                                    <Border Stroke="LightGray" StrokeShape="RoundRectangle 5" StrokeThickness="1"
+                                            BackgroundColor="{Binding IsSelected, Converter={StaticResource SelectionColorConverter}}"
+                                            Padding="4" 
+                                            Margin="2">
+                                        <Grid ColumnDefinitions=".1*,.25*,.25*,.12*,.15*,.13*" Padding="2"  BackgroundColor="#F5F5F5">
+                                            <Label Text="{Binding NroCredito}" FontSize="8" Grid.Column="0" TextColor="Black"/>
+                                            <Label Text="{Binding Fecha}" FontSize="8" Grid.Column="1" TextColor="Black"/>
+                                            <Label Text="{Binding Factura}" FontSize="8" Grid.Column="2" TextColor="Black"/>
+                                            <Label Text="{Binding Plazo}" FontSize="8" Grid.Column="3" TextColor="Black"/>
+                                            <Label Text="{Binding Valor}" FontSize="8" Grid.Column="4" TextColor="Black"/>
+                                            <Label Text="{Binding Saldo}" FontSize="8" Grid.Column="5" TextColor="Black"/>
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </Border>
+
+                    <!-- Botones -->
+                    <Grid Margin="0,10,0,0" ColumnDefinitions=".5*,.5*">
+                        <Button Grid.Column="0"
+                                Clicked="Rpago_Clicked"
+                                Text="Realizar Pago"
+                                x:Name="Rpago"
+                                FontSize="14"
+                                CornerRadius="10"
+                                HorizontalOptions="Center"
+                                IsEnabled="False"
+                                BackgroundColor="{StaticResource SecondaryColor}"
+                                LineBreakMode="WordWrap"/>
+                        <Button Grid.Column="1"
+                                Clicked="Rback_Clicked"
+                                Text="🔙Regresar"
+                                x:Name="Rback"
+                                FontSize="14"
+                                CornerRadius="10"
+                                HorizontalOptions="Center"
+                                IsEnabled="True"
+                                BackgroundColor="{StaticResource Salir}"
+                                LineBreakMode="WordWrap"/>
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
