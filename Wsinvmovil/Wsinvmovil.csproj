@@ -24,11 +24,11 @@
 		<ApplicationTitle>Wsinvmovil</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.wsinvmovil</ApplicationId>
+		<ApplicationId>com.worldsystem.wsinvmovil</ApplicationId>
 
 		<!-- Versions -->
-		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
-		<ApplicationVersion>1</ApplicationVersion>
+		<ApplicationDisplayVersion>2.0</ApplicationDisplayVersion>
+		<ApplicationVersion>2</ApplicationVersion>
 
 		<!-- To develop, package, and publish an app to the Microsoft Store, see: https://aka.ms/MauiTemplateUnpackaged -->
 		<WindowsPackageType>None</WindowsPackageType>
