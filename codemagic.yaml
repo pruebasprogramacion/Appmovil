@@ -1,11 +1,20 @@
 workflows:
-  ios-maui-net9:
-    name: MAUI iOS Build - .NET 9 via dotnet-install.sh
+  maui-ios-adhoc:
+    name: MAUI iOS AdHoc Build - .NET 9
     environment:
       xcode: 16.3
       cocoapods: default
+      vars:
+        BUNDLE_ID: com.worldsystem.wsinvmovil
+        DEVELOPMENT_TEAM: 64P2Z9G4SL
+      ios_signing:
+        certificates:
+          - distribute_certificate_p12
+        provisioning_profiles:
+          - Wsinvmovil-AdhocProfile
+
     scripts:
-      - name: Install .NET SDK 9.0.203 via script
+      - name: Instalar .NET 9 SDK
         script: |
           curl -sSL https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh
           chmod +x dotnet-install.sh
@@ -14,35 +23,31 @@ workflows:
           export PATH=$HOME/dotnet:$PATH
           dotnet --info
 
-      - name: Install MAUI workloads
+      - name: Restaurar dependencias y workloads
         script: |
           export DOTNET_ROOT=$HOME/dotnet
           export PATH=$HOME/dotnet:$PATH
           dotnet workload restore
           dotnet restore Wsinvmovil/Wsinvmovil.csproj
-          dotnet workload list
-    
 
-      - name: Restore NuGet packages
+      - name: Aplicar perfiles de firma
+        script: |
+          xcode-project use-profiles
+
+      - name: Compilar IPA AdHoc
         script: |
           export DOTNET_ROOT=$HOME/dotnet
           export PATH=$HOME/dotnet:$PATH
-          dotnet restore Wsinvmovil/Wsinvmovil.csproj
-
-      - name: Build iOS .NET MAUI App for Simulator
-        script: |
-          export DOTNET_ROOT=$HOME/dotnet
-          export PATH=$HOME/dotnet:$PATH
-          dotnet build Wsinvmovil/Wsinvmovil.csproj \
-            -c Release \
+          dotnet publish Wsinvmovil/Wsinvmovil.csproj \
             -f:net9.0-ios \
-            -p:RuntimeIdentifier=iossimulator-arm64 \
-            -p:PlatformTarget=AnyCPU \
-            -p:MtouchLink=Full \
-            -p:DebugType=None \
-            -p:EnableSymbolStripping=true \
-            -p:EnableWindowsTargeting=false
-   
+            -c:Release \
+            -p:RuntimeIdentifier=ios-arm64 \
+            -p:CodesignKey="Apple Distribution" \
+            -p:CodesignProvision="Wsinvmovil-AdhocProfile" \
+            -p:ApplicationId=${BUNDLE_ID} \
+            -p:CodesignTeamId=${DEVELOPMENT_TEAM}
+
     artifacts:
-      - '**/*.app'
+      - "Wsinvmovil/bin/Release/net9.0-ios/ios-arm64/publish/*.ipa"
+
 
