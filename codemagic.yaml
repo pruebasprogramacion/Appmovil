@@ -42,6 +42,7 @@ workflows:
             -f:net9.0-ios \
             -c:Release \
             -p:RuntimeIdentifier=ios-arm64 \
+            -p:PlatformTarget=Arm64 \
             -p:CodesignKey="Apple Distribution" \
             -p:CodesignProvision="Wsinvmovil-AdhocProfile" \
             -p:ApplicationId=${BUNDLE_ID} \
