@@ -9,13 +9,13 @@ public partial class RealizarPagoPage : ContentPage
 {
     public RealizarPagoPage(string saldo, string id, string nombre, string cedula, List<E_Credito> creditospago)
     {
+        BindingContext = this;
         InitializeComponent();
         // Asignar los valores a los campos de la pantalla de pago
         TxtSaldoPago.Text = saldo;
         TxtNombrePago.Text = nombre;
         TxtIdPago.Text = id;
         creditosgp = creditospago ?? new List<E_Credito>();
-        BindingContext = this;
     }
     E_Caja objEcaja = new E_Caja();
     EPago objEntPagos = new EPago();

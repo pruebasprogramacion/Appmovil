@@ -119,11 +119,11 @@
                                 <Grid ColumnDefinitions="0.25*,0.15*,0.25*,0.15*,0.17*"
                                       BackgroundColor="#2196F3"
                                       Padding="5">
-                                    <Label Text="Fecha" FontAttributes="Bold" FontSize="10" Grid.Column="0" TextColor="White"/>
-                                    <Label Text="Recibo" FontAttributes="Bold" FontSize="10" Grid.Column="1" TextColor="White"/>
-                                    <Label Text="Tipo" FontAttributes="Bold" FontSize="10" Grid.Column="2" TextColor="White"/>
-                                    <Label Text="Valor" FontAttributes="Bold" FontSize="10" Grid.Column="3" TextColor="White"/>
-                                    <Label Text="Estado" FontAttributes="Bold" FontSize="10" Grid.Column="4" TextColor="White"/>
+                                    <Label Text="Fecha" FontAttributes="Bold" FontSize="10" Grid.Column="0" TextColor="Black"/>
+                                    <Label Text="Recibo" FontAttributes="Bold" FontSize="10" Grid.Column="1" TextColor="Black"/>
+                                    <Label Text="Tipo" FontAttributes="Bold" FontSize="10" Grid.Column="2" TextColor="Black"/>
+                                    <Label Text="Valor" FontAttributes="Bold" FontSize="10" Grid.Column="3" TextColor="Black"/>
+                                    <Label Text="Estado" FontAttributes="Bold" FontSize="10" Grid.Column="4" TextColor="Black"/>
                                 </Grid>
                             </CollectionView.Header>
                             <CollectionView.ItemTemplate>

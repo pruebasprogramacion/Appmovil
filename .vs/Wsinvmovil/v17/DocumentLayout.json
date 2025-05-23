@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\consultapagospage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\consultapagospage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\inventariopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\inventariopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\realizarpagopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\realizarpagopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -13,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\entidad\\e_credito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\entidad\\e_credito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\realizarpagopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\realizarpagopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\servicios\\cajaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -79,36 +83,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "InventarioPage.xaml",
+              "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\InventarioPage.xaml",
+              "RelativeDocumentMoniker": "Wsinvmovil\\Views\\InventarioPage.xaml",
+              "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\InventarioPage.xaml",
+              "RelativeToolTip": "Wsinvmovil\\Views\\InventarioPage.xaml",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-23T00:45:32.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConsultaPagosPage.xaml",
+              "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ConsultaPagosPage.xaml",
+              "RelativeDocumentMoniker": "Wsinvmovil\\Views\\ConsultaPagosPage.xaml",
+              "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ConsultaPagosPage.xaml",
+              "RelativeToolTip": "Wsinvmovil\\Views\\ConsultaPagosPage.xaml",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAAAH0AAAB+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-23T00:43:05.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ConsultaPagosPage.xaml.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ConsultaPagosPage.xaml.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Views\\ConsultaPagosPage.xaml.cs",
               "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ConsultaPagosPage.xaml.cs",
               "RelativeToolTip": "Wsinvmovil\\Views\\ConsultaPagosPage.xaml.cs",
-              "ViewState": "AgIAAAMBAAAAAAAAAAA5wBEBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAgwBEBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-25T21:45:28.041Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "RealizarPagoPage.xaml",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\RealizarPagoPage.xaml",
               "RelativeDocumentMoniker": "Wsinvmovil\\Views\\RealizarPagoPage.xaml",
               "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\RealizarPagoPage.xaml",
               "RelativeToolTip": "Wsinvmovil\\Views\\RealizarPagoPage.xaml",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAswFwAAAB3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-25T21:07:29.026Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ComprobantePage.xaml.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ComprobantePage.xaml.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Views\\ComprobantePage.xaml.cs",
@@ -116,25 +142,11 @@
               "RelativeToolTip": "Wsinvmovil\\Views\\ComprobantePage.xaml.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T20:18:08.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T20:18:08.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RealizarPagoPage.xaml.cs",
-              "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\RealizarPagoPage.xaml.cs",
-              "RelativeDocumentMoniker": "Wsinvmovil\\Views\\RealizarPagoPage.xaml.cs",
-              "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\RealizarPagoPage.xaml.cs",
-              "RelativeToolTip": "Wsinvmovil\\Views\\RealizarPagoPage.xaml.cs",
-              "ViewState": "AgIAAM4AAAAAAAAAAAAowN0AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T18:35:57.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CajaService.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Servicios\\CajaService.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Servicios\\CajaService.cs",
@@ -142,12 +154,11 @@
               "RelativeToolTip": "Wsinvmovil\\Servicios\\CajaService.cs",
               "ViewState": "AgIAAHgAAAAAAAAAAIAwwIUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T19:16:25.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T19:16:25.437Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "E_GlobalSettings.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Entidad\\E_GlobalSettings.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Entidad\\E_GlobalSettings.cs",
@@ -155,12 +166,11 @@
               "RelativeToolTip": "Wsinvmovil\\Entidad\\E_GlobalSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T19:42:11.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T19:42:11.637Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "E_Credito.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Entidad\\E_Credito.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Entidad\\E_Credito.cs",
@@ -168,12 +178,11 @@
               "RelativeToolTip": "Wsinvmovil\\Entidad\\E_Credito.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T19:58:42.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T19:58:42.946Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ComprobantePage.xaml",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ComprobantePage.xaml",
               "RelativeDocumentMoniker": "Wsinvmovil\\Views\\ComprobantePage.xaml",
@@ -181,12 +190,11 @@
               "RelativeToolTip": "Wsinvmovil\\Views\\ComprobantePage.xaml",
               "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-25T20:12:39.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T20:12:39.467Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MostrarComprobanteWebView.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Servicios\\MostrarComprobanteWebView.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Servicios\\MostrarComprobanteWebView.cs",
@@ -194,12 +202,11 @@
               "RelativeToolTip": "Wsinvmovil\\Servicios\\MostrarComprobanteWebView.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T19:39:18.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T19:39:18.249Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "LoginService.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Servicios\\LoginService.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Servicios\\LoginService.cs",
@@ -207,12 +214,11 @@
               "RelativeToolTip": "Wsinvmovil\\Servicios\\LoginService.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAAABsAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T19:36:36.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T19:36:36.536Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "LoginPage.xaml.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Views\\LoginPage.xaml.cs",
@@ -220,12 +226,11 @@
               "RelativeToolTip": "Wsinvmovil\\Views\\LoginPage.xaml.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAAADEAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T19:36:46.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T19:36:46.729Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "PagosService.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Servicios\\PagosService.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Servicios\\PagosService.cs",
@@ -233,12 +238,11 @@
               "RelativeToolTip": "Wsinvmovil\\Servicios\\PagosService.cs",
               "ViewState": "AgIAABABAAAAAAAAAIAwwB0BAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T18:25:05.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T18:25:05.813Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "E_Pago.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Entidad\\E_Pago.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Entidad\\E_Pago.cs",
@@ -246,12 +250,11 @@
               "RelativeToolTip": "Wsinvmovil\\Entidad\\E_Pago.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAiwEUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T18:31:40.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T18:31:40.688Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ClientesPage.xaml.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ClientesPage.xaml.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Views\\ClientesPage.xaml.cs",
@@ -259,12 +262,11 @@
               "RelativeToolTip": "Wsinvmovil\\Views\\ClientesPage.xaml.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAAABgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T18:13:07.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T18:13:07.349Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ClientesPage.xaml",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ClientesPage.xaml",
               "RelativeDocumentMoniker": "Wsinvmovil\\Views\\ClientesPage.xaml",
@@ -272,8 +274,11 @@
               "RelativeToolTip": "Wsinvmovil\\Views\\ClientesPage.xaml",
               "ViewState": "AgIAAF8AAAAAAAAAAAAIwG8AAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-25T04:09:37.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T04:09:37.169Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
