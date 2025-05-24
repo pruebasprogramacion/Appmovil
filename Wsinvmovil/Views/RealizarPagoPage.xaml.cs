@@ -35,8 +35,13 @@ public partial class RealizarPagoPage : ContentPage
         btnBack.IsEnabled = true;
         btnImprimir.IsEnabled = false;
         CargarBancos();
+        MostrarBanco = false;
+        MostrarNro = false;
+        MostrarTarjeta = false;
+        MostrarVoucher = false;
+
     }
-   
+
     private void ConvertirMayuscula_TextChanged(object sender, TextChangedEventArgs e)
     {
         if (sender is Entry entry)

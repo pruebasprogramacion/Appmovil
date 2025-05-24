@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\consultapagospage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\consultapagospage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\wsinvmovil.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\wsinvmovil.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\inventariopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\inventariopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\realizarpagopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\realizarpagopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\realizarpagopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\realizarpagopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\clientespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\clientespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\consultapagospage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\consultapagospage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\pagospopup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\pagospopup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\pagospopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\pagospopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\consultapagospage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\consultapagospage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\inventariopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\inventariopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\entidad\\e_credito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,10 +79,6 @@
       "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\entidad\\e_pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\clientespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\clientespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|c:\\aplicaciones_desarrollo\\wsinvmovil\\wsinvmovil\\views\\clientespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A111B522-DACB-42BC-801B-2986992260EB}|Wsinvmovil\\Wsinvmovil.csproj|solutionrelative:wsinvmovil\\views\\clientespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
@@ -81,8 +97,66 @@
               "Name": "ST:42:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:45:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Wsinvmovil",
+              "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Wsinvmovil.csproj",
+              "RelativeDocumentMoniker": "Wsinvmovil\\Wsinvmovil.csproj",
+              "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Wsinvmovil.csproj",
+              "RelativeToolTip": "Wsinvmovil\\Wsinvmovil.csproj",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAABoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-24T18:16:47.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "RealizarPagoPage.xaml.cs",
+              "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\RealizarPagoPage.xaml.cs",
+              "RelativeDocumentMoniker": "Wsinvmovil\\Views\\RealizarPagoPage.xaml.cs",
+              "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\RealizarPagoPage.xaml.cs",
+              "RelativeToolTip": "Wsinvmovil\\Views\\RealizarPagoPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T00:13:48.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PagosPopup.xaml",
+              "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\PagosPopup.xaml",
+              "RelativeDocumentMoniker": "Wsinvmovil\\Views\\PagosPopup.xaml",
+              "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\PagosPopup.xaml",
+              "RelativeToolTip": "Wsinvmovil\\Views\\PagosPopup.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-24T00:13:44.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PagosPopup.xaml.cs",
+              "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\PagosPopup.xaml.cs",
+              "RelativeDocumentMoniker": "Wsinvmovil\\Views\\PagosPopup.xaml.cs",
+              "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\PagosPopup.xaml.cs",
+              "RelativeToolTip": "Wsinvmovil\\Views\\PagosPopup.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T00:13:35.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "InventarioPage.xaml",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\InventarioPage.xaml",
               "RelativeDocumentMoniker": "Wsinvmovil\\Views\\InventarioPage.xaml",
@@ -90,34 +164,31 @@
               "RelativeToolTip": "Wsinvmovil\\Views\\InventarioPage.xaml",
               "ViewState": "AgIAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-23T00:45:32.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-23T00:45:32.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "ConsultaPagosPage.xaml",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ConsultaPagosPage.xaml",
               "RelativeDocumentMoniker": "Wsinvmovil\\Views\\ConsultaPagosPage.xaml",
               "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ConsultaPagosPage.xaml",
               "RelativeToolTip": "Wsinvmovil\\Views\\ConsultaPagosPage.xaml",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAAAH0AAAB+AAAAAAAAAA==",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAwI4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-23T00:43:05.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-23T00:43:05.948Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ConsultaPagosPage.xaml.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ConsultaPagosPage.xaml.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Views\\ConsultaPagosPage.xaml.cs",
               "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ConsultaPagosPage.xaml.cs",
               "RelativeToolTip": "Wsinvmovil\\Views\\ConsultaPagosPage.xaml.cs",
-              "ViewState": "AgIAAAQBAAAAAAAAAAAgwBEBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIBAAAAAAAAAAAAACIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T21:45:28.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T21:45:28.041Z"
             },
             {
               "$type": "Document",
@@ -129,12 +200,23 @@
               "RelativeToolTip": "Wsinvmovil\\Views\\RealizarPagoPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-25T21:07:29.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T21:07:29.026Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
+              "Title": "ClientesPage.xaml.cs",
+              "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ClientesPage.xaml.cs",
+              "RelativeDocumentMoniker": "Wsinvmovil\\Views\\ClientesPage.xaml.cs",
+              "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ClientesPage.xaml.cs",
+              "RelativeToolTip": "Wsinvmovil\\Views\\ClientesPage.xaml.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAABgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T18:13:07.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "ComprobantePage.xaml.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ComprobantePage.xaml.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Views\\ComprobantePage.xaml.cs",
@@ -146,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "CajaService.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Servicios\\CajaService.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Servicios\\CajaService.cs",
@@ -158,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "E_GlobalSettings.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Entidad\\E_GlobalSettings.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Entidad\\E_GlobalSettings.cs",
@@ -170,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "E_Credito.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Entidad\\E_Credito.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Entidad\\E_Credito.cs",
@@ -182,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "ComprobantePage.xaml",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ComprobantePage.xaml",
               "RelativeDocumentMoniker": "Wsinvmovil\\Views\\ComprobantePage.xaml",
@@ -194,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "MostrarComprobanteWebView.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Servicios\\MostrarComprobanteWebView.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Servicios\\MostrarComprobanteWebView.cs",
@@ -206,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "LoginService.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Servicios\\LoginService.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Servicios\\LoginService.cs",
@@ -218,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "LoginPage.xaml.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Views\\LoginPage.xaml.cs",
@@ -230,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "PagosService.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Servicios\\PagosService.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Servicios\\PagosService.cs",
@@ -242,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "E_Pago.cs",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Entidad\\E_Pago.cs",
               "RelativeDocumentMoniker": "Wsinvmovil\\Entidad\\E_Pago.cs",
@@ -254,19 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ClientesPage.xaml.cs",
-              "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ClientesPage.xaml.cs",
-              "RelativeDocumentMoniker": "Wsinvmovil\\Views\\ClientesPage.xaml.cs",
-              "ToolTip": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ClientesPage.xaml.cs",
-              "RelativeToolTip": "Wsinvmovil\\Views\\ClientesPage.xaml.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAABgAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T18:13:07.349Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "ClientesPage.xaml",
               "DocumentMoniker": "C:\\Aplicaciones_Desarrollo\\Wsinvmovil\\Wsinvmovil\\Views\\ClientesPage.xaml",
               "RelativeDocumentMoniker": "Wsinvmovil\\Views\\ClientesPage.xaml",
@@ -275,10 +345,6 @@
               "ViewState": "AgIAAF8AAAAAAAAAAAAIwG8AAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-25T04:09:37.169Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

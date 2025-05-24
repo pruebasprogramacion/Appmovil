@@ -116,14 +116,14 @@
                                         SelectionMode="Single"
                                         HeightRequest="150">
                             <CollectionView.Header>
-                                <Grid ColumnDefinitions="0.25*,0.15*,0.25*,0.15*,0.17*"
+                                    <Grid ColumnDefinitions="0.25*,0.15*,0.25*,0.15*,0.17*"
                                       BackgroundColor="#2196F3"
                                       Padding="5">
-                                    <Label Text="Fecha" FontAttributes="Bold" FontSize="10" Grid.Column="0" TextColor="Black"/>
-                                    <Label Text="Recibo" FontAttributes="Bold" FontSize="10" Grid.Column="1" TextColor="Black"/>
-                                    <Label Text="Tipo" FontAttributes="Bold" FontSize="10" Grid.Column="2" TextColor="Black"/>
-                                    <Label Text="Valor" FontAttributes="Bold" FontSize="10" Grid.Column="3" TextColor="Black"/>
-                                    <Label Text="Estado" FontAttributes="Bold" FontSize="10" Grid.Column="4" TextColor="Black"/>
+                                        <Label Text="Fecha" FontAttributes="Bold" FontSize="10" Grid.Column="0" TextColor="White"/>
+                                        <Label Text="Recibo" FontAttributes="Bold" FontSize="10" Grid.Column="1" TextColor="White"/>
+                                        <Label Text="Tipo" FontAttributes="Bold" FontSize="10" Grid.Column="2" TextColor="White"/>
+                                        <Label Text="Valor" FontAttributes="Bold" FontSize="10" Grid.Column="3" TextColor="White"/>
+                                        <Label Text="Estado" FontAttributes="Bold" FontSize="10" Grid.Column="4" TextColor="White"/>
                                 </Grid>
                             </CollectionView.Header>
                             <CollectionView.ItemTemplate>
@@ -137,11 +137,11 @@
                                         <Grid ColumnDefinitions="0.20*,0.10*,0.20*,0.15*,0.17*,0.10*"
                                               Padding="2"
                                               BackgroundColor="#F5F5F5">
-                                            <Label Text="{Binding Fecha}" FontSize="8" Grid.Column="0"/>
-                                            <Label Text="{Binding Recibo}" FontSize="10" Grid.Column="1"/>
-                                            <Label Text="{Binding Tipo}" FontSize="8" Grid.Column="2"/>
-                                            <Label Text="{Binding Valor}" FontSize="8" Grid.Column="3"/>
-                                            <Label Text="{Binding Estado}" FontSize="8" Grid.Column="4"/>
+                                                <Label Text="{Binding Fecha}" FontSize="8" Grid.Column="0" TextColor="Black"/>
+                                                <Label Text="{Binding Recibo}" FontSize="10" Grid.Column="1" TextColor="Black"/>
+                                                <Label Text="{Binding Tipo}" FontSize="8" Grid.Column="2" TextColor="Black"/>
+                                                <Label Text="{Binding Valor}" FontSize="8" Grid.Column="3" TextColor="Black"/>
+                                                <Label Text="{Binding Estado}" FontSize="8" Grid.Column="4" TextColor="Black"/>
                                             <CheckBox Grid.Column="5"
                                                       IsChecked="{Binding IsSelected}"
                                                       CheckedChanged="OnCheckBoxCheckedChanged"/>
