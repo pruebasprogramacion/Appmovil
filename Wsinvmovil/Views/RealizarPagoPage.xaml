@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:entidades="clr-namespace:Wsinvmovil.Entidad"
              x:Class="Wsinvmovil.Views.RealizarPagoPage"
+             x:DataType="entidades:RealizarPagoViewModel"
              Title="RealizarPagoPage">
 
     <ScrollView>
@@ -73,23 +74,23 @@
                         </Picker>
                     </Grid>
 
-                    <Grid Margin="0,10,0,0" ColumnDefinitions="0.2*,0.8*" IsVisible="{Binding MostrarBanco}" x:DataType="entidades:RealizarPagoViewModel">
+                    <Grid Margin="0,10,0,0" ColumnDefinitions="0.2*,0.8*" IsVisible="{Binding MostrarBanco}">
                         <Label Grid.Column="0" Text="Banco:" TextColor="Black" FontSize="14" FontAttributes="Bold" />
                         <Picker Grid.Column="1" x:Name="PckBanco" Title="Seleccione un banco" TextColor="Black" FontSize="14"
                                 SelectedIndexChanged="PckBanco_SelectedIndexChanged" />
                     </Grid>
 
-                    <Grid Margin="0,10,0,0" ColumnDefinitions="0.2*,0.8*" IsVisible="{Binding MostrarNro}" x:DataType="entidades:RealizarPagoViewModel">
+                    <Grid Margin="0,10,0,0" ColumnDefinitions="0.2*,0.8*" IsVisible="{Binding MostrarNro}">
                         <Label Grid.Column="0" Text="Nro:" x:Name="TxtNro" TextColor="Black" FontSize="14" FontAttributes="Bold" />
                         <Entry Grid.Column="1" x:Name="TxtNroP" TextColor="Black" FontSize="14" />
                     </Grid>
 
-                    <Grid Margin="0,10,0,0" ColumnDefinitions="0.2*,0.8*" IsVisible="{Binding MostrarTarjeta}" x:DataType="entidades:RealizarPagoViewModel">
+                    <Grid Margin="0,10,0,0" ColumnDefinitions="0.2*,0.8*" IsVisible="{Binding MostrarTarjeta}">
                         <Label Grid.Column="0" Text="Tarjeta:" TextColor="Black" FontSize="14" FontAttributes="Bold" />
                         <Entry Grid.Column="1" x:Name="TxtTarjeta" TextColor="Black" FontSize="14" />
                     </Grid>
 
-                    <Grid Margin="0,10,0,0" ColumnDefinitions="0.2*,0.8*" IsVisible="{Binding MostrarVoucher}" x:DataType="entidades:RealizarPagoViewModel">
+                    <Grid Margin="0,10,0,0" ColumnDefinitions="0.2*,0.8*" IsVisible="{Binding MostrarVoucher}" >
                         <Label Grid.Column="0" Text="Voucher:" TextColor="Black" FontSize="14" FontAttributes="Bold" />
                         <Entry Grid.Column="1" x:Name="TxtVoucher" TextColor="Black" FontSize="14" />
                     </Grid>

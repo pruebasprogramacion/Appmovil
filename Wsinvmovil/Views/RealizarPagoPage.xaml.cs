@@ -7,10 +7,13 @@ namespace Wsinvmovil.Views;
 
 public partial class RealizarPagoPage : ContentPage
 {
+    private RealizarPagoViewModel viewModel = new();
     public RealizarPagoPage(string saldo, string id, string nombre, string cedula, List<E_Credito> creditospago)
     {
-        BindingContext = this;
+     
         InitializeComponent();
+        viewModel = new RealizarPagoViewModel();
+        BindingContext = viewModel;
         // Asignar los valores a los campos de la pantalla de pago
         TxtSaldoPago.Text = saldo;
         TxtNombrePago.Text = nombre;

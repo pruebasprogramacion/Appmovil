@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -79,14 +81,41 @@ namespace Wsinvmovil.Entidad
         public string Cedual { get; set; } = "";
     }
 
-    public class RealizarPagoViewModel
+    public class RealizarPagoViewModel : INotifyPropertyChanged
     {
-        // Estas son las propiedades que estás usando en tu XAML
-        public bool MostrarNro { get; set; } = false;
-        public bool MostrarTarjeta { get; set; } = false;
-        public bool MostrarVoucher { get; set; } = false;
-        public bool MostrarBanco { get; set; } = false;
+        private bool _mostrarBanco;
+        private bool _mostrarNro;
+        private bool _mostrarTarjeta;
+        private bool _mostrarVoucher;
 
-        // Puedes agregar más propiedades si luego necesitas expandir tu lógica
+        public bool MostrarBanco
+        {
+            get => _mostrarBanco;
+            set { _mostrarBanco = value; OnPropertyChanged(); }
+        }
+
+        public bool MostrarNro
+        {
+            get => _mostrarNro;
+            set { _mostrarNro = value; OnPropertyChanged(); }
+        }
+
+        public bool MostrarTarjeta
+        {
+            get => _mostrarTarjeta;
+            set { _mostrarTarjeta = value; OnPropertyChanged(); }
+        }
+
+        public bool MostrarVoucher
+        {
+            get => _mostrarVoucher;
+            set { _mostrarVoucher = value; OnPropertyChanged(); }
+        }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+        protected void OnPropertyChanged([CallerMemberName] string? name = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        }
     }
 }
