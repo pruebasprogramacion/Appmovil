@@ -1,5 +1,4 @@
-﻿// Archivo: ConsultaPagosPage.xaml.cs
-using Wsinvmovil.Entidad;
+﻿using Wsinvmovil.Entidad;
 using Wsinvmovil.Servicios;
 using System.Data;
 using Microsoft.Maui.Controls;
@@ -9,10 +8,10 @@ namespace Wsinvmovil.Views;
 
 public partial class ConsultaPagosPage : ContentPage
 {
-
     private ObservableCollection<DetPago> detpagos = new ObservableCollection<DetPago>();
     private ObservableCollection<Pago> pagos = new ObservableCollection<Pago>();
-    private Pago _pagoActual = new(); // Inicializado para evitar nulls
+    private Pago _pagoActual = new();
+    private bool _popupActivo = false;
 
     public ConsultaPagosPage()
     {
@@ -28,7 +27,7 @@ public partial class ConsultaPagosPage : ContentPage
         {
             PopPagos.PopupClosed += OnPopupCloseClicked;
         }
-    } 
+    }
 
     private void inicializarfecha()
     {
@@ -39,11 +38,9 @@ public partial class ConsultaPagosPage : ContentPage
     {
         try
         {
-            // Limpiar listas previas
             detpagos.Clear();
             pagos.Clear();
 
-            // Validación de entrada
             if (string.IsNullOrWhiteSpace(TxtCliente?.Text))
             {
                 await DialogHelper.ShowAlert("⚠ Advertencia", "Debe ingresar un valor para realizar la búsqueda");
@@ -56,22 +53,18 @@ public partial class ConsultaPagosPage : ContentPage
                 return;
             }
 
-            // Crear buscador con el texto ingresado
             var buscador = new BuscadorCLienteNombre(TxtCliente.Text.Trim());
 
-            // Suscribirse al evento del buscador
             buscador.ClienteSeleccionado += async (s, datos) =>
             {
                 TxtCliente.Text = datos.nombrecli;
                 TxtNombreCli.Text = datos.nombrecli;
                 TxtIdCli.Text = datos.idcli;
 
-                // Asegurarse que el ID no sea null antes de continuar
                 if (!string.IsNullOrEmpty(datos.idcli))
-                     await  ConsultarPagos(datos.idcli);
+                    await ConsultarPagos(datos.idcli);
             };
 
-            // Abrir buscador
             await Navigation.PushModalAsync(buscador);
         }
         catch (Exception ex)
@@ -153,6 +146,8 @@ public partial class ConsultaPagosPage : ContentPage
 
     private async void OnCheckBoxCheckedChanged(object sender, CheckedChangedEventArgs e)
     {
+        if (_popupActivo) return;
+
         var checkBox = (CheckBox)sender;
         var pagoSeleccionado = (Pago)checkBox.BindingContext;
 
@@ -161,6 +156,7 @@ public partial class ConsultaPagosPage : ContentPage
         if (checkBox.IsChecked)
         {
             _pagoActual = pagoSeleccionado;
+            _popupActivo = true;
             await ShowPaymentDetailsPopup(pagoSeleccionado);
         }
         else
@@ -180,6 +176,7 @@ public partial class ConsultaPagosPage : ContentPage
                 $"Nro Crédito: {j.NroCredito}\nFactura: {j.Factura}\nFecha Crédito: {j.Fec_Credito}\nPago: {j.Pago}\nSaldo: {j.Saldo}"));
 
             PopPagos?.SetDetails(detalles);
+
             if (PopPagos != null)
             {
                 PopPagos.IsVisible = true;
@@ -250,6 +247,8 @@ public partial class ConsultaPagosPage : ContentPage
             _pagoActual = new();
             ListaPagos.ItemsSource = pagos;
         }
+
+        _popupActivo = false;
     }
 
     private async void Rback_Clicked(object sender, EventArgs e)
@@ -270,4 +269,3 @@ public partial class ConsultaPagosPage : ContentPage
         return true;
     }
 }
-
